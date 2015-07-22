@@ -7,7 +7,7 @@ project_name: Chef-Guard
 ### Prerequisites
 There are a few steps you need to take/execute before you can start installing and configuring Chef-Guard. Only the steps marked with a * are mandatory, the other steps are dependend on how you choose to configuration/setup Chef-Guard.
 
-### *Chef
+### *Chef Server version < 12 
 Chef-Guard needs a valid Chef user account to talk to your Chef Server/Organization to [validate changes]({{ side.url }}/projects/chef-guard/introduction/monitoring_auditing.html#validating-changes). So you need to create a 'chef-guard' user with at least read rights to your Chef Server/Organization. Chef-Guard will never make any changes to your Chef environment, but will only request information about certain objects. Make sure you save the private key into a .pem file, as you will need this file while configuring Chef-Guard.
 
 ### *Chef-Client version >= 11.14.0
